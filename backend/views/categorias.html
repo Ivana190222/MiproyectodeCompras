@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Formulario Categorias</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../assets/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/js/validaciones.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="../lista_productos.php">Home</a></li>
+                    <li><a href="../lista_categorias.php">Lista de Categorias</a></li>
+                    <li><a href="../lista_productos.php">Lista de Productos</a></li>
+                    <li><a href="./categorias.html">Registrar Nueva Categoria</a></li>
+                    <li><a href="./productos.html">Registrar Nuevo Producto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <h2 class="subt">Alta de Categoría</h2>
+        <img id="imagen" src="../../assets/img/logo.jpg" alt="logo">
+        <form class="form" action="../categorias.php" id="formulario_categorias" enctype="multipart/form-data"
+            method="POST">
+            <label for="nombre_categoria">Nombre de la Categoría que desea agregar:</label>
+            <input type="hidden" name="action" value="guardar">
+            <input type="text" id="nombre_categoria" name="nombre_categoria">
+            <button type="reset" class="btn">Cancelar</button>
+            <button type="submit" class="btn">Guardar</button>
+            <br><br>
+            </main>
+
+    </body>
+</html>

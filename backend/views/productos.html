@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario Productos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../assets/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/js/validaciones.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    </head>
+    <body>
+        <main>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="nav-links">
+                        <li><a href="../lista_productos.php">Home</a></li>
+                        <li><a href="../lista_categorias.php">Lista de Categorias</a></li>
+                        <li><a href="../lista_productos.php">Lista de Productos</a></li>
+                        <li><a href="./categorias.html">Registrar Nueva Categoria</a></li>
+                        <li><a href="./productos.html">Registrar Nuevo Producto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <h2 class="subt">Alta de Productos</h2>
+        <img id="imagen" src="../../assets/img/logo.jpg" alt="logo">
+        <form class="form" action="../productos.php" id="formulario_productos" enctype="multipart/form-data"
+            method="POST">
+            <input type="hidden" name="action" value="guardar">
+            <label for="nombre_producto">Nombre:</label>
+            <input type="text" id="nombre_producto" name="nombre_producto">
+            <label for="descripcion_productos">Descripción:</label>
+            <input type="text" id="descripcion_producto" name="descripcion_producto">
+            <label for="precio_producto">Precio:</label>
+            <input type="text" id="precio_producto" name="precio_producto">
+            <label for="imagen_producto">Imagen:</label>
+            <input type="file" id="imagen_producto" name="imagen_producto" accept="image/*">
+            <label for="categoria_producto">Categoria:</label>
+            <input type="text" id="categoria_producto" name="categoria_producto">
+            <button type="reset" class="btn">Cancelar</button>
+            <button type="submit" class="btn">Guardar</button>
+            <br><br>
+            </main>
+    </body>
+</html>
